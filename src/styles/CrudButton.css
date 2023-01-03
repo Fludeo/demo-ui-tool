@@ -1,0 +1,59 @@
+
+.crud-button-update{
+    padding: 0 .2rem;
+    font-weight: bold;
+    border-radius: .2rem;
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    color: white;
+  
+  }
+  
+  .crud-button-update--hover:hover{
+  
+    background-color: var(--color-selected);
+    box-shadow: 0 10px 20px 0 rgb(51 119 245 / 50%) ;
+    border: 2px solid var(--color-selected);
+  
+  
+  }
+
+
+  .crud-button-delete{
+    padding: 0 .2rem;
+    font-weight: bold;
+    border-radius: .2rem;
+    background-color: var(--color-danger);
+    border: 2px solid var(--color-danger);
+    color: white;
+  
+  }
+  
+  .crud-button-delete--hover:hover{
+  
+    background-color: var(--color-selected);
+    box-shadow: 0 10px 20px 0 rgb(51 119 245 / 50%) ;
+    border: 2px solid var(--color-selected);
+  
+  
+  }
+
+
+  .crud-button-read{
+    padding: 0 .2rem;
+    font-weight: bold;
+    border-radius: .2rem;
+    background-color: var(--color-selected);
+    border: 2px solid var(--color-selected);
+    color: white;
+  
+  }
+  
+  .crud-button-read--hover:hover{
+  
+    background-color: var(--color-secondary);
+    box-shadow: 0 10px 20px 0 rgb(250 207 16 / 50%) ;
+    border: 2px solid var(--color-secondary);
+  
+  
+  }
