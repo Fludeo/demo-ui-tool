@@ -1,30 +1,23 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from 'react';
 
+const useTournaments = (id) => {
+  const [tournaments, setTournaments] = useState({ tournaments: [], count: 0 });
 
-
-const useTournaments = (id) =>{
-
-const [tournaments,setTournaments] = useState({tournaments:[], count:0})
-
-
-
-    useEffect(()=>{
-    if(id){
-        fetch(`/tournaments/${id}`,{ mode: 'no-cors'})
-        .then(res => res.json())
-        .then(res => setTournaments(res))
-        .catch(err => console.log(err))
+  useEffect(() => {
+    if (id) {
+      fetch(`/tournaments/${id}`, { mode: 'no-cors' })
+        .then((res) => res.json())
+        .then((res) => setTournaments(res))
+        .catch((err) => console.log(err));
+    } else {
+      fetch('/tournaments', { mode: 'no-cors' })
+        .then((res) => res.json())
+        .then((res) => setTournaments(res))
+        .catch((err) => console.log(err));
     }
-    else{
-        fetch('/tournaments',{ mode: 'no-cors'})
-        .then(res => res.json())
-        .then(res => setTournaments(res))
-        .catch(err => console.log(err))
-    }
-    
-    },[tournaments])
+  }, [tournaments]);
 
-    return tournaments
-}
+  return tournaments;
+};
 
-export default useTournaments
+export default useTournaments;
