@@ -69,7 +69,7 @@ function App() {
       ) : (
         <>
           {/* AQUI IRIA UNA LISTA DE TORNEOS */}
-          <p>No estas loggeado</p>
+          <p>No estas loggeado aun</p>
         </>
       )}
     </div>
