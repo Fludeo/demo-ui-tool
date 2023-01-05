@@ -24,14 +24,14 @@ const NavBar = () => {
         {isAuthenticated? (
           <>
             <img className="auth-avatar" src={user.picture} alt={user.name} />
-            <p>welcome {user.email}</p>
+              <p>welcome {user.email}<strong> {user.email_verified? "✔️  " :'❌' }</strong></p>
           </>
         ):(<></>)}
         </div>
         <div className="auth-button">
         {isAuthenticated? (
-            <StandardButton action={handleLogout} type={'logout'} />
-          ) : (<StandardButton action={handleLogin} type={'login'} />
+            <StandardButton action={handleLogout} type={'danger'}text={'logout'} />
+          ) : (<StandardButton action={handleLogin} type={'selected'} text={'login'} />
           )}
         </div>
       </header>

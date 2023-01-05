@@ -1,8 +1,8 @@
 import React from 'react'
 import '../styles/StandardButton.css'
 
-const StandardButton = ({action, type}) => {
-  return <button className={`std-button ${type}`} onClick={action}>{type}</button>;
+const StandardButton = ({action, type, text}) => {
+  return <button className={`std-button ${type}`} onClick={action}>{text}</button>;
 
 }
 

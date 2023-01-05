@@ -1,6 +1,7 @@
 .std-button {
   min-width: 80px;
   min-height: 30px;
+  margin-bottom: 5px;
   padding: 0 0.2rem;
   font-weight: bold;
   border-radius: 0.2rem;
@@ -11,23 +12,23 @@
   color: white;
 }
 
-.logout {
+.danger {
   background-color: var(--color-danger);
   border: 2px solid var(--color-danger);
 }
 
-.logout:hover {
+.danger:hover {
   background-color: var(--color-selected);
   box-shadow: 0 10px 20px 0 rgb(51 119 245 / 50%);
   border: 2px solid var(--color-selected);
 }
 
-.login {
+.selected {
   background-color: var(--color-selected);
   border: 2px solid var(--color-selected);
 }
 
-.login:hover {
+.selected:hover {
   background-color: var(--color-secondary);
   box-shadow: 0 10px 20px 0 rgb(250 207 16 / 50%);
   border: 2px solid var(--color-secondary);
