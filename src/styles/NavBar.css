@@ -1,0 +1,36 @@
+.navheader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(68, 68, 68, 0.413);
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 80% 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 0.3em 3em 0 3em;
+  grid-template-areas:
+    'project . '
+    'authinf authbtn';
+}
+.project {
+  grid-area: project;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.auth-info {
+  grid-area: authinf;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.auth-button {
+  grid-area: authbtn;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.auth-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}

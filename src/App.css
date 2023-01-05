@@ -5,112 +5,98 @@
   scroll-behavior: smooth;
 }
 
-body{
-  min-width:100%;
+body {
+  min-width: 100%;
   min-height: 100vh;
 }
 
-:root{
-
-  --color-primary:rgb(83, 8, 223);
+:root {
+  --color-primary: rgb(83, 8, 223);
   --color-primary-shadow: rgba(83, 8, 223, 0.5);
   --color-secondary: rgb(250, 207, 16);
   --color-selected: rgb(51, 119, 245);
-  --color-danger:rgb(223, 8, 55);
-  --color-succes:rgb(51, 223, 8);
+  --color-danger: rgb(223, 8, 55);
+  --color-succes: rgb(51, 223, 8);
   --text-primary: #000000de;
   --text-secondary: #00000099;
-
 }
 
-.App{
+.App {
   width: 100%;
   min-height: 100vh;
+  margin-top: 8rem;
   display: flex;
   flex-direction: row;
 }
-.buttons-section{
- display: flex;
- flex-direction: column;
- justify-content: space-around;
- align-items: center;
- width: 25rem;
-
+.buttons-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 25rem;
 }
 
-.main-section{
+.main-section {
   width: 100%;
-
 }
-.tournament-section{
- min-height: 30rem;
-}
-
-.tournament-section__header{
-  margin: 2rem 0;
-}
-.tournament-section__card-container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.team-section{
+.tournament-section {
   min-height: 30rem;
 }
 
-.team-section__header{
+.tournament-section__header {
   margin: 2rem 0;
 }
-.team-section__card-container{
+.tournament-section__card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
 }
-.add-tournament-button{
+.team-section {
+  min-height: 30rem;
+}
 
+.team-section__header {
+  margin: 2rem 0;
+}
+.team-section__card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.add-tournament-button {
   width: 8rem;
   height: 3.5rem;
   font-weight: bold;
   font-size: large;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: var(--color-primary);
-  box-shadow: 0 10px 20px 0 rgb(83 8 223 / 50%) ;
+  box-shadow: 0 10px 20px 0 rgb(83 8 223 / 50%);
   border: 2px solid var(--color-primary);
   color: white;
-
 }
 
-.add-tournament-button--hover:hover{
-
+.add-tournament-button--hover:hover {
   background-color: var(--color-selected);
-  box-shadow: 0 10px 20px 0 rgb(51 119 245 / 50%) ;
+  box-shadow: 0 10px 20px 0 rgb(51 119 245 / 50%);
   border: 2px solid var(--color-selected);
-
-
 }
 
-
-.add-team-button{
-
+.add-team-button {
   width: 8rem;
   height: 3.5rem;
   font-weight: bold;
   font-size: large;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: var(--color-primary);
-  box-shadow: 0 10px 20px 0 rgb(83 8 223 / 50%) ;
+  box-shadow: 0 10px 20px 0 rgb(83 8 223 / 50%);
   border: 2px solid var(--color-primary);
   color: white;
-
 }
 
-.add-team-button--hover:hover{
-
+.add-team-button--hover:hover {
   background-color: var(--color-selected);
-  box-shadow: 0 10px 20px 0 rgb(51 119 245 / 50%) ;
+  box-shadow: 0 10px 20px 0 rgb(51 119 245 / 50%);
   border: 2px solid var(--color-selected);
-
-
 }
