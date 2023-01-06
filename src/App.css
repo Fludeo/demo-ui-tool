@@ -26,6 +26,13 @@ body {
   min-height: 100vh;
   margin-top: 8rem;
   display: flex;
+  flex-direction: column;
+}
+.Routes {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 8rem;
+  display: flex;
   flex-direction: row;
 }
 .buttons-section {
@@ -99,4 +106,27 @@ body {
   background-color: var(--color-selected);
   box-shadow: 0 10px 20px 0 rgb(51 119 245 / 50%);
   border: 2px solid var(--color-selected);
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
